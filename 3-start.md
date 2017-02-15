@@ -19,4 +19,4 @@ title: 3-Start
 
 ![terminal](images/terminal.png)
 
-**To shut down:** close browser window then close the host window with `CTL+C`.
+**To shut down:** close browser window then close the host window with `Ctrl+C`.

@@ -12,7 +12,7 @@ layout: default
 
 Feb 2017
 
-> all other images and content: cc-by-sa <a href="https://github.com/evanwill">evan will</a> 2016
+> content: cc-by-sa <a href="https://github.com/evanwill">evan will</a> 2016
 
 > built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
 

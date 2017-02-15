@@ -13,5 +13,5 @@ title: 2-Messy
 | 42291 | $1k | Ihaho |
 | “Using OpenRefine by Ruben Verborgh and Max De Wilde, September 2013” | | |
 
- 
+Format, inconsistency, white space, extra characters, multivalued cells, etc...
  
