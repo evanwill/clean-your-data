@@ -11,7 +11,7 @@ title: 1-About
 > - more interactive and visual than scripting
 > - more provisional / exploratory / experimental / playful than a database
 >
-> [David Huynh](http://www.davidhuynh.net/spaces/nicar2011/tutorial.pdf)
+> [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf)
 
 ![Refine Screenshot](images/refine.png)
 
