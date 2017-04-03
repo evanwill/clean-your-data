@@ -1,7 +1,7 @@
 ---
 layout: default
-title:
 ---
+![]()
 
 # Clean Your Data: Getting Started with OpenRefine
 
@@ -13,8 +13,8 @@ This site provides a basic lesson outline. See the [workshop video](https://yout
 
 Offered Feb 2017 at [University of Idaho Library](http://www.lib.uidaho.edu/)
 
+> built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
+>
 > content: cc-by-sa <a href="https://github.com/evanwill">evan will</a> 2017 
 >
 > <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a>
->
-> built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
