@@ -13,9 +13,9 @@ title: 1-About
 >
 > [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf)
 
-![Refine Screenshot](images/refine.png)
+OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html), [open source](https://github.com/OpenRefine/OpenRefine), Java application, that runs offline in a web browser. 
 
-OpenRefine is a [Free](https://www.gnu.org/philosophy/free-sw.en.html), Open source, Extensible, Java app, that runs offline in web browser.
+![Refine Screenshot](images/refine.png)
 
 ## Exciting Trailers from Google!
 
