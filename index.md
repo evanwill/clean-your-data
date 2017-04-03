@@ -1,14 +1,15 @@
 ---
 layout: default
+title:
 ---
 
 # Clean Your Data: Getting Started with OpenRefine
 
 ![openrefine](images/refinegem.jpg)
 
-> Before analysis comes the messy work of evaluating, cleaning, and transforming data. This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html). We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data. Intended for: students, faculty, and staff with an interest in cleaning, transforming, and working with diverse data sources. No experience necessary.
+> Before analysis comes the messy work of evaluating, cleaning, and transforming data. This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html). We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data. Intended for students, faculty, and staff with an interest in cleaning, transforming, and working with diverse data sources. No experience necessary.
 
-This site provides a basic workshop outline. See the [workshop video](https://youtu.be/wGVtycv3SS0) for more content.
+This site provides a basic lesson outline. See the [workshop video](https://youtu.be/wGVtycv3SS0) for more content.
 
 Offered Feb 2017 at University of Idaho Library
 
