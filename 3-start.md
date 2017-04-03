@@ -5,11 +5,14 @@ title: 3-Start
 
 # Setup Refine
     
-- Install [Java](http://java.com/en/) if you do not have it (be sure to uncheck the "recommended" option to add Yahoo to your browsers!)
-- [Download the OpenRefine package](http://openrefine.org/download.html) for your OS (version 2.6-rc2 is known to work well, although a new version 2.7-rc1 was recently released)
-- Extract the package to a permanent location, for example in your User directory or Documents. On Windows, unzip by right clicking and selecting Extract All. On Mac, drag `dmg` to the application folder (Mac has known [issues](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions#mac-osx), try these [solutions](https://gist.github.com/evanwill/138ff4a31a4bfd61c5626e43bee22772)). On Linux, unpack to desired location with `tar xzf google-refine.tar.gz`. 
+1. Install [Java](http://java.com/en/) if you do not have it (be sure to uncheck the "recommended" option to add Yahoo to your browsers!)
+2. Download the most recent [OpenRefine package](http://openrefine.org/download.html) for your OS.
+3. Extract the package to a permanent location, for example in your User directory or Documents. 
+    - Windows: unzip by right clicking and selecting Extract All. 
+    - Mac: drag `dmg` to the application folder (Mac has known [issues](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions#mac-osx), try these [solutions](https://gist.github.com/evanwill/138ff4a31a4bfd61c5626e43bee22772)). 
+    - Linux: unpack to desired location with `tar xzf openrefine-linux-2.7-rc.2.tar.gz`. 
 
-(get the latest advice from the [official wiki](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions))
+Full documentation is available on the [official wiki](https://github.com/OpenRefine/OpenRefine/wiki/).
 
 # Start Refine
 
@@ -19,4 +22,6 @@ title: 3-Start
 
 ![terminal](images/terminal.png)
 
-**To shut down:** close browser window then close the host window with `Ctrl+C`.
+**To shut down:** close browser window then stop the host terminal window with `Ctrl+C`. This will ensure open projects are saved.
+
+> *Note:* The user interface is rendered by your web browser, but Refine is not a web application. No information is sent online and no internet connection is necessary.
