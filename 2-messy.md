@@ -6,7 +6,7 @@ title: 2-Messy
 # What is Messy Data?
 
 Inconsistent formats, unnecessary white space, extra characters, typos, etc... 
-Messy data is the ban of analysis! 
+Messy data is the bane of analysis! 
 Each row contains exactly the same info:
 
 | 2015-10-14 | $1,000 | ID |
