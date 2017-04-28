@@ -9,7 +9,7 @@ title: 3-Start
 2. Download the most recent [OpenRefine package](http://openrefine.org/download.html) for your OS.
 3. Extract the package to a permanent location, for example in your User directory or Documents. 
     - Windows: unzip by right clicking and selecting Extract All. 
-    - Mac: drag the `dmg` to the application folder (Mac has known [issues](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions#mac-osx), try these [solutions](https://gist.github.com/evanwill/138ff4a31a4bfd61c5626e43bee22772)). 
+    - Mac: drag the `dmg` to the application folder (Mac has known [issues](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions#mac-osx), try these [solutions](https://evanwill.github.io/_drafts/notes/open-refine-osx.html)). 
     - Linux: unpack to desired location with with `tar`, for example `tar xzf openrefine-linux-2.7-rc.2.tar.gz`. 
 
 Full documentation is available on the [official wiki](https://github.com/OpenRefine/OpenRefine/wiki/).
