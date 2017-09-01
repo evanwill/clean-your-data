@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 5-Resources
+nav: true
 ---
 
 # Resources
