@@ -8,7 +8,7 @@ nav: true
 
 In this demo we are going to play with a data set about University endowments harvested from Wikipedia—so it is very *messy*! 
 
-Download <a href="images/universityData.csv" target="_blank">`universityData.csv`</a>
+Download <a href="assets/universityData.csv" target="_blank">`universityData.csv`</a>
 
 > The university endowment demo data is from the [Enipedia OpenRefine Tutorial](http://enipedia.tudelft.nl/wiki/OpenRefine_Tutorial). 
 
@@ -50,6 +50,10 @@ Download <a href="images/universityData.csv" target="_blank">`universityData.csv
     - fetch URLs
         - basic geo code lookup, `"http://maps.google.com/maps/api/geocode/json?sensor=false&address=" + escape(value, "url")
 with(value.parseJson().results[0].geometry.location, pair, pair.lat +", " + pair.lng)`
+
+# Demo: Sonnets, Fetching and Parsing HTML
+
+See this [lesson](sonnets-demo.html) to learn about fetching html and using GREL arrays.
 
 # Demo: Web Scrape Craigslist 
 
