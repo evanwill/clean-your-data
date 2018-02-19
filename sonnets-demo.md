@@ -254,8 +254,8 @@ Only the currently selected subset will be exported.
 
 # Advanced APIs with Jython
 
-*[Example 2](#example-2-url-queries-and-parsing-json)* demonstrated Refine's fetch function with a simple web API, essentially utilizing URL patterns to request information from a server. 
-This workflow uses the HTTP GET protocol, meaning the query is encoded in the URL string, thus limited in length (2048 ASCII characters), complexity, and security.
+Refine has a built in function to fetch web pages from a column of URLs, enabling the use of simple web APIs that utilize URL patterns to request information from a server (see [Chronam demo](chronam-demo.html)). 
+The fetch workflow uses the HTTP GET protocol, meaning the query is encoded in the URL string, thus limited in length (2048 ASCII characters), complexity, and security.
 Instead, many API services used to enhance text data, such as [geocoding](https://en.wikipedia.org/wiki/Geocoding) or [named entity recognition](https://en.wikipedia.org/wiki/Named-entity_recognition), use HTTP POST to transfer information to the server for processing. 
 
 GREL does not have a built in function to use this type of API.

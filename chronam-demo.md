@@ -12,18 +12,15 @@ These sources enable new queries and aggregations of text that were previously i
 This example will harvest data from the [Chronicling America](http://chroniclingamerica.loc.gov/) project to assemble a small set of newspaper front pages with full text.
 Following a common web scraping workflow, Refine is used to construct the query URL, fetch the information, and parse the JSON response.
 
-<div class="alert alert-warning">
-Chronicling America is fully open, thus no key or account is needed to access the API and there are no limits on the use. 
-Other aggregators are often proprietary and restricted.
-Please review the specific terms of use before web scraping or using the information in research.
-</div>
+> Chronicling America is fully open, thus no key or account is needed to access the API and there are no limits on the use. 
+> Other aggregators are often proprietary and restricted.
+> Please review the specific terms of use before web scraping or using the information in research.
+
 
 ## Start "Chronicling America" Project
 
-To get started after completing *Example 1*, click the *Open* button in the upper right.
-A new tab will open with the Refine start project view. 
-The tab with the Sonnets project can be left open without impacting performance.
-Create a project from *Clipboard* by pasting this CSV into the text box:
+Start OpenRefine and select *Create Project*. 
+Create a project from *Clipboard* and paste this CSV into the text box:
 
 ```
 state,year
@@ -36,7 +33,7 @@ Washington,1865
 After clicking *Next*, Refine should automatically identify the content as a CSV with the correct parsing options. 
 Add the *Project name* "ChronAm" at the top right and click *Create project*.
 
-{% include figure.html caption="Create project" filename="refine-start-project.png" %}
+{% include figure.html caption="Create project" file="lesson/refine-start-project.png" %}
 
 ## Construct a Query
 
@@ -65,7 +62,7 @@ To create the set of search queries, from the *state* column, add a column named
 ```
 "http://chroniclingamerica.loc.gov/search/pages/results/?state=" + value.escape('url') + "&date1=" + cells['year'].value.escape('url') + "&date2=" + cells['year'].value.escape('url') + "&dateFilterType=yearRange&sequence=1&sort=date&rows=5&format=json"
 ```
-{% include figure.html caption="Create query URL" filename="refine-chronam-url.png" %}
+{% include figure.html caption="Create query URL" file="lesson/refine-chronam-url.png" %}
 
 The expression concatenates the constants (base URL, search service, and query field names) together with the values in each row.
 The `escape()` function is added to the cell variables to ensure the string will be safe in a URL (the opposite of the `unescape()` function introduced in *Example 1*).
@@ -104,7 +101,7 @@ Add a new column based on *fetch* with the name "items" and enter this expressio
 value.parseJson()['items'].join("|||")
 ```
 
-{% include figure.html caption="parse json items" filename="refine-parse-items.png" %}
+{% include figure.html caption="parse json items" file="lesson/refine-parse-items.png" %}
 
 Selecting `['items']` exposes the array of newspaper records nested inside the JSON response.
 The `join()` function concatenates the array with the given separator resulting in a string value.
@@ -121,13 +118,13 @@ Notice that the new rows are empty in all columns except *items*.
 To ensure the state is available with each newspaper issue, the empty values can be filled using the `Fill down` function.
 Click on the *state* column > *Edit cells* > *Fill down*. 
 
-{% include figure.html caption="fill down" filename="refine-fill-down.png" %}
+{% include figure.html caption="fill down" file="lesson/refine-fill-down.png" %}
 
 This is a good point to clean up the unnecessary columns.
 Click on the *All* column > *Edit columns* > *Re-order / remove columns*.
 Drag all columns except *state* and *items* to the right side, then click *OK* to remove them.
 
-{% include figure.html caption="Re-order / remove columns" filename="refine-chronam-reorder.png" %}
+{% include figure.html caption="Re-order / remove columns" file="lesson/refine-chronam-reorder.png" %}
 
 Sanity check: with the original columns removed, both *records* and *rows* will read 20.
 This makes sense, as the project started with four states and fetched five records for each.
@@ -147,7 +144,7 @@ Create a new column from *items* for each newspaper metadata element by parsing 
 
 After the desired information is extracted, the *items* column can be removed using *Edit column* > *Remove this column*. 
 
-{% include figure.html caption="Final ChronAm project columns" filename="refine-chronam-final.png" %}
+{% include figure.html caption="Final ChronAm project columns" file="lesson/refine-chronam-final.png" %}
 
 Each column could be further refined using other GREL transformations.
 For example, to convert *date* to a more readable format, use [GREL date functions](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Date-Functions).
