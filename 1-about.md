@@ -6,7 +6,7 @@ nav: true
 
 # What is OpenRefine?
 
-OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html), [open source](https://github.com/OpenRefine/OpenRefine), Java application, that runs offline in a web browser. 
+OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html){:target="_blank"}, [open source](https://github.com/OpenRefine/OpenRefine){:target="_blank"}, Java application, that runs offline in a web browser. 
 
 > **“A power tool for working with messy data”**
 >
@@ -14,7 +14,7 @@ OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html), [open so
 > - more interactive and visual than scripting
 > - more provisional / exploratory / experimental / playful than a database
 >
-> [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf)
+> [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf){:target="_blank"}
 
 ![Refine Screenshot](images/refine.png)
 
@@ -22,9 +22,9 @@ OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html), [open so
 
 If you want a visual introduction, check out these trailers from Google created for an early version:
 
-- [Introduction](https://youtu.be/B70J_H_zAWM)
-- [Data Transformation](https://youtu.be/cO8NVCs_Ba0)
-- [Data Augmentation](https://youtu.be/5tsyz3ibYzk)
+- [Introduction](https://youtu.be/B70J_H_zAWM){:target="_blank"}
+- [Data Transformation](https://youtu.be/cO8NVCs_Ba0){:target="_blank"}
+- [Data Augmentation](https://youtu.be/5tsyz3ibYzk){:target="_blank"}
 
 ## Tabular Data 
 

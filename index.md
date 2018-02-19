@@ -6,13 +6,13 @@ layout: default
 
 # Clean Your Data: Getting Started with OpenRefine
 
-> Before analysis comes the messy work of evaluating, cleaning, and transforming data. This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html). We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data. Intended for students, faculty, and staff with an interest in cleaning, transforming, and working with diverse data sources. No experience necessary.
+> Before analysis comes the messy work of evaluating, cleaning, and transforming data. This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html){:target="_blank"}. We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data. Intended for students, faculty, and staff with an interest in cleaning, transforming, and working with diverse data sources. No experience necessary.
 
-This site provides a basic lesson outline. See the [workshop video](https://youtu.be/wGVtycv3SS0) for more content.
+This site provides a basic lesson outline. See the [workshop video](https://youtu.be/wGVtycv3SS0){:target="_blank"} for more content.
 
-Offered Feb 2017 at [University of Idaho Library](http://www.lib.uidaho.edu/)
+Offered Feb 2017 at [University of Idaho Library](http://www.lib.uidaho.edu/){:target="_blank"}
 
-> built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
+> built using [Jekyll](https://jekyllrb.com/){:target="_blank"} and [GitHub Pages](https://pages.github.com/){:target="_blank"}
 >
 > content: cc-by-sa <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> {{ site.pub_year}}. (get [source code]({{ site.repo }}))
 >
