@@ -22,6 +22,7 @@ Download <a href="assets/universityData.csv" target="_blank">`universityData.csv
     - faceting
     - edit cells / facets
     - transform, `value.unescape('url')`, find & replace, `value.replace("old","new")`
+    - add column based on, `value.length()`, numeric facet
     - undo/redo
     - clustering
 	- split into multiple columns
