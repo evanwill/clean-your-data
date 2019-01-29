@@ -13,9 +13,11 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: $spacing-unit / 2;
 }
 td {
     padding: 6px 13px;
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
+h1, h2 { text-decoration: underline $border-color; }

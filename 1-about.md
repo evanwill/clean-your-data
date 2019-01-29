@@ -8,6 +8,8 @@ nav: true
 
 OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html){:target="_blank"}, [open source](https://github.com/OpenRefine/OpenRefine){:target="_blank"}, Java application, that runs offline in a web browser. 
 
+The original creator, David Huynh, describes Refine as: 
+
 > **“A power tool for working with messy data”**
 >
 > - more powerful than a spreadsheet
@@ -16,7 +18,7 @@ OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html){:target="
 >
 > [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf){:target="_blank"}
 
-![Refine Screenshot](images/refine.png)
+{% include figure.html img="refine.png" alt="openrefine interface" width="90%" %}
 
 ## Exciting Trailers from Google!
 
