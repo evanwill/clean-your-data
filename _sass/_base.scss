@@ -46,9 +46,8 @@ img {
  */
 figure > img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
-
 figcaption {
   font-size: $small-font-size;
   color: $grey-color;
@@ -61,6 +60,7 @@ figcaption {
 ul, ol {
   margin-left: $spacing-unit;
 }
+
 li {
   > ul,
   > ol {
@@ -68,37 +68,23 @@ li {
   }
 }
 
-/* tables */
-table {
-  border-spacing: 0;
-border-collapse: collapse;
-}
-td {
-padding: 6px 13px;
-border: 1px solid #ddd;
-box-sizing: border-box;
-}
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  color: $headings-color;
 }
-h1, h2, h3 { 
-  border-bottom: 1px solid $brand-color;//$grey-color-light;
-}
-h2, h3 {
-  margin-top: 30px;
-}
+
 /**
  * Links
  */
 a {
-  color: $brand-color;
+  color: $link-color;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($link-color, 15%);
   }
 
   &:hover {
