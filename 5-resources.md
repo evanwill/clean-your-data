@@ -34,3 +34,4 @@ Help:
 - [Library Carpentry OpenRefine](https://librarycarpentry.org/lc-open-refine/){:target="_blank"}, workshop lesson with library data examples.
 - [Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine){:target="_blank"} intro lesson from Programming Historian focusing on history data.
 - [Fetching and Parsing Data from the Web with OpenRefine](https://programminghistorian.org/lessons/fetch-and-parse-data-with-openrefine){:target="_blank"} advanced lesson from Programming Historian focusing on historical data, using GREL and Jython.
+- [Handy OpenRefine Functions to Remember](https://evanwill.github.io/_drafts/notes/open-refine-tips.html){:target="_blank"}, notes about useful GREL functions.
