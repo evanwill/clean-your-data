@@ -8,6 +8,8 @@ nav: true
 
 OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html){:target="_blank"}, [open source](https://github.com/OpenRefine/OpenRefine){:target="_blank"}, Java application, that runs offline in a web browser. 
 
+{% include figure.html img="refine.jpg" alt="openrefine interface" width="100%" %}
+
 The original creator, David Huynh, describes Refine as: 
 
 > **“A power tool for working with messy data”**
@@ -18,11 +20,9 @@ The original creator, David Huynh, describes Refine as:
 >
 > [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf){:target="_blank"}
 
-{% include figure.html img="refine.png" alt="openrefine interface" width="90%" %}
-
 ## Exciting Trailers from Google!
 
-If you want a visual introduction, check out these trailers from Google created for an early version:
+If you want a visual introduction, check out these trailers from Google created for an earlier version called GoogleRefine:
 
 - [Introduction](https://youtu.be/B70J_H_zAWM){:target="_blank"}
 - [Data Transformation](https://youtu.be/cO8NVCs_Ba0){:target="_blank"}
@@ -30,21 +30,26 @@ If you want a visual introduction, check out these trailers from Google created 
 
 ## Tabular Data 
 
-Refine can handle all sorts of data!
+Refine can handle all sorts of data from all sorts of sources:
 
-![table](images/table.png)
+- **Import formats:** TSV, CSV, custom separator, Excel, ODF spreadsheet, XML, JSON, RDF, Google Sheets, MARC...
+- **Import sources:** local file, archive (zip), URL, clipboard, database, or Google Sheets
+- **Output formats:** TSV, CSV, HTML, Excel, ODF spreadsheet, SQL, Wikidata, RDF schema, or custom template
 
-- Import formats: TSV, CSV, custom separator txt, Excel, XML, JSON, Google Spreadsheets, RDF
-- Sources: local file, archive (zip), URL, clipboard, or Google
+Once imported, the data is represented as tabular, using this basic terminology: 
 
-Comfortable performance up to 100,000's of rows.
+{% include figure.html img="table.png" alt="table parts" width="100%" %}
+
+Refine is efficient enough to provide comfortable performance up to 100,000's of rows (although, you may want to [increase memory allocated to Java](https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory){:target="_blank"}).
 
 ## Use Cases
 
-**Clean** - discover and fix inconsistency with faceting, clustering, cell transforms, GREL expressions...
+**Explore** - navigate and evaluate quality with visualizations and filters that help dig deeply into the data so you can get to know it better...
 
-**Transform** - change formats or reshape with split/join multi valued cells, split columns, transpose columns/rows...
+**Clean** - efficiently discover and fix inconsistency with faceting, clustering, cell transforms, GREL expressions...
+
+**Transform** - easily change formats, subset, or reshape with split/join multi valued cells, split columns, transpose columns/rows...
 
 **Extend** - enrich data by combining files, merging projects, fetching URLs, reconciliation with online databases...
 
-**Automate** - reuse your processing routine by exporting operation history in JSON!
+**Automate** - record and preserve your processing routine for transparency, then automate reuse by exporting operation history in JSON!
