@@ -17,7 +17,7 @@ Each column contains exactly the same info:
 | Wed, Oct 14th | US$1000 | Idaho, |
 | 42291 | $1k | Ihaho |
 
-Multivalued cells limit ability to manipulate, clean, and use the data:
+Multi-valued cells limit ability to manipulate, clean, and use the data:
 
 | “Using OpenRefine by Ruben Verborgh and Max De Wilde, September 2013” | | |
 | "University of Idaho, 875 Perimeter Drive, Moscow, ID, 83844, p. 208-885-6111, info@uidaho.edu" | | |
