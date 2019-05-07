@@ -28,7 +28,7 @@ Under "Get Data From", click *Clipboard*, and paste this URL into the text box:
 https://evanwill.github.io/clean-your-data/assets/pg1105.html
 ```
 
-{% include figure.html file="lesson/refine-clipboard1.png" caption="Start project with clipboard" %}
+{% include figure.html img="lesson/refine-clipboard1.png" caption="Start project with clipboard" %}
 
 After clicking *Next*, Refine should automatically identify the content as a line-based text file and the default parsing options should be correct.
 Add the project name "Sonnets" at the top right and click *Create project*.
@@ -39,18 +39,18 @@ This will result in a project with one column and one row.
 Refine's builtin function to retrieve a list of URLs is done by creating a new column.
 Click on the menu arrow of *Column 1* > *Edit column* > *Add column by fetching urls*.
 
-{% include figure.html caption="Edit column > Add column by fetching URL" file="lesson/refine-fetch1.png" %}
+{% include figure.html caption="Edit column > Add column by fetching URL" img="lesson/refine-fetch1.png" %}
 
 Name the new column "fetch". 
 The *Throttle delay* option sets a pause time between requests to avoid being blocked by a server.
 The default is conservative. 
 
-{% include figure.html caption="Add column by fetch dialog box" file="lesson/refine-fetch1.2.png" %}
+{% include figure.html caption="Add column by fetch dialog box" img="lesson/refine-fetch1.2.png" %}
 
 After clicking "OK", Refine will start requesting the URLs from the base column as if you were opening the pages in your browser, and will store each response in the cells of the new column.
 In this case, there is one URL in *Column 1* resulting in one cell in the *fetch* column containing the full HTML source for the Sonnets web page. 
 
-{% include figure.html caption="Fetch results" file="lesson/refine-fetch1.3.png" %}
+{% include figure.html caption="Fetch results" img="lesson/refine-fetch1.3.png" %}
 
 ## Parse HTML
 
@@ -62,12 +62,12 @@ To make examining the HTML easier, click on the URL in *Column 1* to open the li
 In this case the sonnets page does not have distinctive semantic markup, but each poem is contained inside a single `<p>` element. 
 Thus, if all the paragraphs are selected, the sonnets can be extracted from the group.
 
-{% include figure.html caption="Each sonnet is a \<p\> with lines separated by \<br /\>" file="lesson/refine-sonnet-markup.png" %}
+{% include figure.html caption="Each sonnet is a \<p\> with lines separated by \<br /\>" img="lesson/refine-sonnet-markup.png" %}
 
 On the *fetch* column, click on the menu arrow > *edit column* > *Add column based on this column*.
 Give the new column the name "parse", then click in the *Expression* text box.
 
-{% include figure.html caption="Edit column > Add column based on this column" file="lesson/refine-expression-box.png" %}
+{% include figure.html caption="Edit column > Add column based on this column" img="lesson/refine-expression-box.png" %}
 
 Data in Refine can be transformed using the [General Refine Expression Language](https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language) (GREL).
 The *Expression* box accepts GREL functions that will be applied to each cell in the existing column to create values for the new one.
@@ -87,7 +87,7 @@ value.parseHtml().select("p")
 
 Do not click *OK* at this point, simply look at the *Preview* to see the result of the expression.
 
-{% include figure.html caption="Edit the GREL expression, parseHtml function" file="lesson/refine-parse-html.png" %}
+{% include figure.html caption="Edit the GREL expression, parseHtml function" img="lesson/refine-parse-html.png" %}
 
 Notice that the output on the right no longer starts with the HTML root elements (`<!DOCTYPE html` etc.) seen on the left.
 Instead, it starts with a square bracket `[`, displaying an [array](https://en.wikipedia.org/wiki/Array_data_type) of all the `p` elements found in the page.
@@ -127,7 +127,7 @@ Individual rows for each sonnet can be created by splitting the cell.
 Click the menu arrow on the *parse* column > *Edit cells* > *Split multi-valued cells*. 
 Enter the separator `|` that was used to `join` in the last step.
 
-{% include figure.html caption="Edit cells > Split multivalued cells" file="lesson/refine-split-multivalued.png" %}
+{% include figure.html caption="Edit cells > Split multivalued cells" img="lesson/refine-split-multivalued.png" %}
 
 After this operation, the top of the project table should now read 154 rows.
 Below the number is an option toggle "Show as: *rows* *records*".
@@ -136,7 +136,7 @@ Keeping track of these numbers is an important "sanity check" when transforming 
 The 154 rows make sense because the ebook contained 154 sonnets, while 1 record represents the original table with only one row.
 An unexpected number would indicate a problem with the transformation.
 
-{% include figure.html caption="Project rows" file="lesson/refine-rows.png" %}
+{% include figure.html caption="Project rows" img="lesson/refine-rows.png" %}
 
 Each cell in the *parse* column now contains one sonnet surround by a `<p>` tag.
 The tags can be cleaned up by parsing the HTML again.
@@ -155,7 +155,7 @@ value.parseHtml().select("p")[0].innerHtml()
 
 Click *OK* to transform all 154 cells in the column. 
 
-{% include figure.html caption="Edit cells > Transform" file="lesson/refine-innerhtml.png" %}
+{% include figure.html caption="Edit cells > Transform" img="lesson/refine-innerhtml.png" %}
 
 <div class="alert alert-warning">
 In the expression above <code>select</code> returns an array of <code>p</code> elements even though there is only one in each cell.
@@ -192,7 +192,7 @@ Create new columns from the *parse* column using these names and expressions:
 - "number", `value.split("<br />")[0].trim()`
 - "first", `value.split("<br />")[1].trim()`
 
-{% include figure.html caption="GREL split and trim" file="lesson/refine-add-num-column.png" %}
+{% include figure.html caption="GREL split and trim" img="lesson/refine-add-num-column.png" %}
 
 The next column to create is the full sonnet text which contains multiple lines.
 However, `trim()` will only clean the beginning and end of the cell, leaving unnecessary whitespace in the body of the sonnet.
@@ -216,7 +216,7 @@ Thus, the final expression to extract and clean the full sonnet text is:
 forEach(value.split("<br />"), line, line.trim()).slice(1).join("\n")
 ```
 
-{% include figure.html caption="GREL forEach expression" file="lesson/refine-foreach.png" %}
+{% include figure.html caption="GREL forEach expression" img="lesson/refine-foreach.png" %}
 
 Click "OK" to create the column.
 Following the same technique, add another new column from *parse* named "last" to represent the final couplet lines using:
@@ -238,19 +238,19 @@ This is a typical Refine workflow allowing each transformation to be easily chec
 At this point the unnecessary columns can be removed. 
 Click on the *All* column > *Edit columns* > *Re-order / remove columns*.
 
-{% include figure.html caption="All > Edit columns" file="lesson/refine-reorder.png" %}
+{% include figure.html caption="All > Edit columns" img="lesson/refine-reorder.png" %}
 
 Drag unwanted column names to the right side of the dialog box, in this case *Column 1*, *fetch*, and *parse*. 
 Drag the remaining columns into the desired order on the left side.
 Click *Ok* to remove and reorder the data set. 
 
-{% include figure.html caption="Re-order / Remove columns" file="lesson/refine-reorder2.png" %}
+{% include figure.html caption="Re-order / Remove columns" img="lesson/refine-reorder2.png" %}
 
 Use filters and facets to explore and subset the collection of sonnets.
 Then click the export button to generate a version of the new sonnet table for use outside of Refine.
 Only the currently selected subset will be exported.
 
-{% include figure.html caption="Export CSV" file="lesson/refine-export.png" %}
+{% include figure.html caption="Export CSV" img="lesson/refine-export.png" %}
 
 # Advanced APIs with Jython
 
@@ -280,7 +280,7 @@ We will use this window to test out a series of expressions, so leave it open un
 On the right side of the *Expression* box is a drop down to change the expression language.
 Select *Python / Jython* from the list.
 
-{% include figure.html caption="Jython expression" file="lesson/refine-jython.png" %}
+{% include figure.html caption="Jython expression" img="lesson/refine-jython.png" %}
 
 Notice that the preview now shows `null` for the output. 
 A Jython expression in Refine must have a `return` statement to add the output to the new cells in the transformation.
@@ -301,7 +301,7 @@ get = urllib2.urlopen("http://www.jython.org/")
 return get.read()
 ```
 
-{% include figure.html caption="Jython GET request" file="lesson/refine-jython-expression.png" %}
+{% include figure.html caption="Jython GET request" img="lesson/refine-jython-expression.png" %}
 
 The preview should display the HTML source of the Jython home page, this is an HTTP GET request as in previous fetch examples.
 Notice that similar to opening and reading a text file with Python, `urlopen()` returns a file-like object that must be `read()` into a string.
@@ -338,7 +338,7 @@ post = urllib2.urlopen(url, data)
 return post.read()
 ```
 
-{% include figure.html caption="jython request" file="lesson/refine-jython-request.png" %}
+{% include figure.html caption="jython request" img="lesson/refine-jython-request.png" %}
 
 Click *OK* and the Jython script will run for every row in the column.
 The JSON response can then be parsed with GREL using the methods demonstrated in *Example 2* (for example, `value.parseJson()['label']`).
