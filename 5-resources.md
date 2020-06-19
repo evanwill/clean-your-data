@@ -26,7 +26,7 @@ Help:
 
 - *Using OpenRefine*, by Ruben Verborgh and Max De Wilde, eBook [available at UI library](https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_pq_ebook_centralEBC1389316&context=PC&vid=UID&search_scope=everything&tab=default_tab&lang=en_US){:target="_blank"}
 - Data Carpentry: [Data Cleaning with OpenRefine for Ecologists](http://www.datacarpentry.org/OpenRefine-ecology-lesson/){:target="_blank"} or [OpenRefine for Social Science Data](https://datacarpentry.org/openrefine-socialsci/){:target="_blank"}.
-- Big Data University [OpenRefine 101](https://cognitiveclass.ai/courses/introduction-to-openrefine/){:target="_blank"}, online course.
+- RefinePro [OpenRefine Foundation](https://courses.tranzf.org/course/view.php?id=18){:target="_blank"}, online course (formerly bigdatauniversity).
 - [Grateful Data](https://github.com/scottythered/gratefuldata/wiki){:target="_blank"}, extensive tutorial covering harvesting and enriching open Grateful Dead data.
 - [OpenRefine Tutorial](http://enipedia.tudelft.nl/wiki/OpenRefine_Tutorial){:target="_blank"} from Enipedia using university endowment data.
 - [Cleaning Data with Refine](http://schoolofdata.org/handbook/recipes/cleaning-data-with-refine/){:target="_blank"}, tutorial from School of Data using African hospital data.
