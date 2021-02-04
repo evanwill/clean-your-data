@@ -7,13 +7,13 @@ layout: default
 # Getting Started with OpenRefine: Explore, Clean, and Transform your Data!
 
 Before analysis comes the messy work of evaluating, cleaning, and transforming data.
-This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html){:target="_blank"}. 
+This hands on workshop will introduce a free power tool to get the job done: [OpenRefine](http://openrefine.org/index.html){:target='_blank' rel='noopener'}. 
 We will install Refine, create a project, and get oriented to the many features for exploring and transforming tabular data. 
 
 Intended for students, faculty, and staff with an interest in cleaning, transforming, and working with diverse data sources. 
 No experience necessary.
 
-This site provides a basic lesson outline. See the [workshop video](https://youtu.be/wGVtycv3SS0){:target="_blank"} (2017) for more content.
+This site provides a basic lesson outline. See the [workshop video](https://youtu.be/wGVtycv3SS0){:target='_blank' rel='noopener'} (2017) for more content.
 
 <div class="toc" markdown="1">
 ## Contents:
@@ -23,9 +23,9 @@ This site provides a basic lesson outline. See the [workshop video](https://yout
 {% endfor %}
 </div>
 
-Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/){:target="_blank"}, {{ site.pub_year }}, 2017, 2016.
+Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/){:target='_blank' rel='noopener'}, {{ site.pub_year }}, 2017, 2016.
 
-> built using [Jekyll](https://jekyllrb.com/){:target="_blank"} and [GitHub Pages](https://pages.github.com/){:target="_blank"}
+> built using [Jekyll](https://jekyllrb.com/){:target='_blank' rel='noopener'} and [GitHub Pages](https://pages.github.com/){:target='_blank' rel='noopener'}
 >
 > content: cc-by-sa <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> {{ site.pub_year}}. (get [source code]({{ site.repo }}))
 > Last build date: {{ site.time | date: "%Y-%m-%d" }}.

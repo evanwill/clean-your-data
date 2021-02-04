@@ -6,7 +6,7 @@ nav: true
 
 # What is OpenRefine?
 
-OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html){:target="_blank"}, [open source](https://github.com/OpenRefine/OpenRefine){:target="_blank"}, Java application, that runs offline in a web browser. 
+OpenRefine is a [free](https://www.gnu.org/philosophy/free-sw.en.html){:target='_blank' rel='noopener'}, [open source](https://github.com/OpenRefine/OpenRefine){:target='_blank' rel='noopener'}, Java application, that runs offline in a web browser. 
 
 {% include figure.html img="refine.jpg" alt="openrefine interface" width="100%" %}
 
@@ -18,15 +18,15 @@ The original creator, David Huynh, describes Refine as:
 > - more interactive and visual than scripting
 > - more provisional / exploratory / experimental / playful than a database
 >
-> [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf){:target="_blank"}
+> [David Huynh](http://web.archive.org/web/20141021040915/http://davidhuynh.net/spaces/nicar2011/tutorial.pdf){:target='_blank' rel='noopener'}
 
 ## Exciting Trailers from Google!
 
 If you want a visual introduction, check out these trailers from Google created for an earlier version called GoogleRefine:
 
-- [Introduction](https://youtu.be/B70J_H_zAWM){:target="_blank"}
-- [Data Transformation](https://youtu.be/cO8NVCs_Ba0){:target="_blank"}
-- [Data Augmentation](https://youtu.be/5tsyz3ibYzk){:target="_blank"}
+- [Introduction](https://youtu.be/B70J_H_zAWM){:target='_blank' rel='noopener'}
+- [Data Transformation](https://youtu.be/cO8NVCs_Ba0){:target='_blank' rel='noopener'}
+- [Data Augmentation](https://youtu.be/5tsyz3ibYzk){:target='_blank' rel='noopener'}
 
 ## Tabular Data 
 
@@ -40,7 +40,7 @@ Once imported, the data is represented as tabular, using this basic terminology:
 
 {% include figure.html img="table.png" alt="table parts" width="100%" %}
 
-Refine is efficient enough to provide comfortable performance up to 100,000's of rows (although, you may want to [increase memory allocated to Java](https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory){:target="_blank"}).
+Refine is efficient enough to provide comfortable performance up to 100,000's of rows (although, you may want to [increase memory allocated to Java](https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory){:target='_blank' rel='noopener'}).
 
 ## Use Cases
 

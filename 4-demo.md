@@ -8,9 +8,9 @@ nav: true
 
 **Demo data downloads:**
 
-- [`universityData.csv`](assets/universityData.csv){:target="_blank"}, a data set about University endowments harvested from Wikipedia—so it is very *messy*! (from the [Enipedia OpenRefine Tutorial](http://enipedia.tudelft.nl/wiki/OpenRefine_Tutorial){:target="_blank"})
-- [`doaj-article-sample.csv`](assets/doaj-article-sample.csv){:target="_blank"}, citations harvested from DOAJ (from [Library Carpentry OpenRefine](https://librarycarpentry.org/lc-open-refine/){:target="_blank"})
-- [`potlatch-historical-collection.csv`](assets/potlatch-historical-collection.csv){:target="_blank"}, metadata from a digital collection (from [University of Idaho Library](https://www.lib.uidaho.edu/digital/){:target="_blank"}).
+- [`universityData.csv`](assets/universityData.csv){:target='_blank' rel='noopener'}, a data set about University endowments harvested from Wikipedia—so it is very *messy*! (from the [Enipedia OpenRefine Tutorial](http://enipedia.tudelft.nl/wiki/OpenRefine_Tutorial){:target='_blank' rel='noopener'})
+- [`doaj-article-sample.csv`](assets/doaj-article-sample.csv){:target='_blank' rel='noopener'}, citations harvested from DOAJ (from [Library Carpentry OpenRefine](https://librarycarpentry.org/lc-open-refine/){:target='_blank' rel='noopener'})
+- [`potlatch-historical-collection.csv`](assets/potlatch-historical-collection.csv){:target='_blank' rel='noopener'}, metadata from a digital collection (from [University of Idaho Library](https://www.lib.uidaho.edu/digital/){:target='_blank' rel='noopener'}).
 
 **Create Project:**
 
@@ -37,12 +37,12 @@ Edit:
 - Edit facets
 - Transform column
     - Edit cells > Common Transformations > Trim leading and trailing whitespace
-    - Edit cells > Transform > use [GREL](https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language){:target="_blank"}
+    - Edit cells > Transform > use [GREL](https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language){:target='_blank' rel='noopener'}
         - add text, `value + " something new"`
         - find & replace, `value.replace("old","new")`
         - GREL helpers, e.g. `value.unescape('url')`
         - get values from other cells, `cells['column_name'].value`
-        - [GREL dates](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Date-Functions){:target="_blank"}, `value.toDate().toString('yyyy-MM-dd')`
+        - [GREL dates](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Date-Functions){:target='_blank' rel='noopener'}, `value.toDate().toString('yyyy-MM-dd')`
 - Create new columns
     - Edit column > Add column based on... `value.length()`
     - Edit column > Split into several columns... 
