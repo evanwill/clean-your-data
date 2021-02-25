@@ -15,7 +15,7 @@ keywords: "OpenRefine, academic workshop, data transformation"
 # author settings for cc-by
 author: evan will
 github_username: evanwill
-pub_year: 2019
+pub_year: 2021
 
 # add the full url for the github repository
 repo: "https://github.com/evanwill/clean-your-data"
@@ -31,7 +31,7 @@ baseurl: /clean-your-data
 # add google analytics if desired (optional)
 # if blank, it will be ignored
 # use JEKYLL_ENV=production on build command
-google_analytics: UA-74844011-1
+google_analytics: 
 
 # defaults (to simplify front matter)
 defaults:
