@@ -13,13 +13,13 @@ We will install Refine, create a project, and get oriented to the many features 
 Intended for students, faculty, and staff with an interest in cleaning, transforming, and working with diverse data sources. 
 No experience necessary.
 
-This site provides a basic lesson outline. See the [workshop video](https://youtu.be/wGVtycv3SS0){:target='_blank' rel='noopener'} (2017) for more content.
+This site provides a basic lesson outline. See the [2017 workshop video](https://youtu.be/wGVtycv3SS0){:target='_blank' rel='noopener'} for more content.
 
 <div class="toc" markdown="1">
 ## Contents:
 
 {% for lesson in site.pages %}
-{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | absolute_url }}){% endif %}
+{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | relative_url }}){% endif %}
 {% endfor %}
 </div>
 
