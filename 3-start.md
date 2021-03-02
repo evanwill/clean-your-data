@@ -5,24 +5,36 @@ nav: true
 ---
 
 # Setup Refine
-    
-1. **Install Java:** OpenRefine is a [Java](http://java.com/en/){:target='_blank' rel='noopener'} application and requires Java JRE to run. Download and install Java if you do not have it (you can check by typing `java -version` into a terminal). You want a 64-bit version, which is usually the default install. It is also a good idea to uninstall any old Java versions on your machine.
-    - *Windows and Mac:* Clicking "Free Java Download" on the [Java](http://java.com/){:target='_blank' rel='noopener'} site will get you the correct installer. (When installing be sure to uncheck the "recommended" option to add any bundled spamware to your system!)
-    - *Linux:* Install from your distro's repositories, for example `sudo apt install default-jre` on Ubuntu/Debian (this is usually OpenJDK rather than Oracle's version).
-2. **Download Refine:** Download the most recent [OpenRefine package](http://openrefine.org/download.html){:target='_blank' rel='noopener'} for your OS. Releases are posted on the [OpenRefine site](http://openrefine.org/download.html){:target='_blank' rel='noopener'} or [GitHub releases page](https://github.com/OpenRefine/OpenRefine/releases/){:target='_blank' rel='noopener'}. (this workshop used OpenRefine V3.1) 
-3. **Extract Refine:** Unzip the OpenRefine package to a permanent location, for example in your User directory, Home, or Documents. 
-    - *Windows:* unzip by right clicking and selecting Extract All. 
-    - *Mac:* drag the `dmg` to the application folder (Mac has known [issues](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions#mac-osx){:target='_blank' rel='noopener'}, try these [solutions](https://evanwill.github.io/_drafts/notes/open-refine-osx.html){:target='_blank' rel='noopener'}). 
-    - *Linux:* unpack in desired location with with `tar`, for example `tar xzf openrefine-linux-3.1.tar.gz`. 
 
-Full documentation is available on the [official wiki](https://github.com/OpenRefine/OpenRefine/wiki/){:target='_blank' rel='noopener'}.
+To use Refine you will need a web browser (Firefox or Chrome) and an [OpenRefine kit](https://openrefine.org/download.html). 
+
+In the past, [installing Java]({{ '/content/win-java.html' | relative_url }}) was required--however, this is *no longer necessary* on Windows and Mac!
+Check the [official installation documentation](https://docs.openrefine.org/manual/installing) or follow the instructions for your system below:
+
+## Windows
+
+- **Download:** visit the [Refine download page](https://openrefine.org/download.html) and choose the latest "Windows kit with embedded Java" package. This is a self contained package that includes everything needed to run Refine on your system.
+- **Extract:** the package you downloaded will be a zip file that needs to be extracted (e.g. "openrefine-win-with-java-3.4.1.zip"). Unzip the package by right clicking and selecting Extract All. Move the resulting folder to a sensible permanent location on your computer, e.g. "C:\openrefine\".
+- **Run:** inside the folder you extracted, double click "openrefine.exe" to start Refine. The first time you may get a warning that the publisher could not be verified, dismiss the warning and click *Run*. Once open, pin the Refine icon to your taskbar for easy access in the future! 
+
+*Note:* if you would like to use the traditional Refine kit, check [notes on installing Java on Windows]({{ '/win-java.html' | relative_url }}).
+
+## Mac 
+
+- **Download:** visit the [Refine download page](https://openrefine.org/download.html) and choose the latest "Mac kit". This is a self contained package that includes everything needed to run Refine on your system (e.g. "openrefine-mac-3.4.1.dmg").
+- **Install:** drag the Refine kit from your downloads to the Applications folder.
+- **Run:** click the Refine icon in your Applications folder. 
+
+## Linux
+
+- **Java:** if you do not have Java JRE/JDK, install latest Java from your distro's repositories. For example, on Ubuntu/Debian: `sudo apt install default-jre`
+- **Download:** visit the [Refine download page](https://openrefine.org/download.html) and choose the latest "Linux kit".
+- **Extract:** the package you downloaded will be a compressed archive (e.g. "openrefine-linux-3.4.1.tar.gz"). Unpack the file using your Archive manager or Tar (e.g. `tar xzf openrefine-linux-3.4.1.tar.gz`) to a sensible permanent location (e.g. in your Home directory).
+- **Run:** open a terminal in your OpenRefine directory and type `./refine`.
 
 # Use Refine
 
-1. **Start the Java app:** Opening Refine differs depending on your OS, but in all cases the app will start running in a terminal window which you can ignore and minimize (but do not close!).
-    - *Windows:* double click `openrefine.exe` (You may get a warning that the publisher could not be verified, ignore it, and click *Run*. Once open, pin the Refine icon to your taskbar for easy access in the future). 
-    - *Mac:* click the Refine icon in the applications folder. 
-    - *Linux:* in the OpenRefine directory open terminal and type `./refine`.
+1. **Start the Refine Java app:** Starting Refine differs depending on your OS (see above), but in all cases the app will start running in a terminal window. This is the Refine application running in Java. You can ignore and minimize the terminal window (but do not close!).
 2. **Use the GUI:** Once Refine is running in a terminal, your default web browser should automatically open with the interface. If it does not open automatically or you close the browser tab, find the GUI by typing <http://127.0.0.1:3333> or `localhost:3333` in your address bar. 
 3. **Shut down:** close any browser tabs with the GUI, then stop the host terminal window with `Ctrl+C` (or `Command-Q` on Mac). This will ensure any open projects are saved.
 
