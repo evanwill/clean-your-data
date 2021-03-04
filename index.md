@@ -2,6 +2,8 @@
 layout: default
 ---
 
+An updated version of this workshop and video is available at [OpenRefine-b](https://evanwill.github.io/openrefine-b/)!
+
 {% include figure.html img="open-refine-320px.png" alt="openrefine logo" width="60%" %}
 
 # Getting Started with OpenRefine: Explore, Clean, and Transform your Data!
